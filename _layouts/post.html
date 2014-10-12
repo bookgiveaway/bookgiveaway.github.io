@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <article class="post-content">
+    <a href="//{{ page.book }}" target="_blank"><img class="cover" src="//{{ page.cover }}" /></a>
+    <h1 class="title">{{ page.title }}</h1>
+    <h2 class"author"><a href="//{{ page.homepage }}" target="_blank">{{ page.author }}</a></h2>
+    <p class="description">{{ page.description }}</p>
+    <p class="download"><a href="//{{ page.book }}" target="_blank">Download ePub</a></p>
+  </article>
+
+</div>

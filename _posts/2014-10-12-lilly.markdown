@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Lilly"
+date:   2014-10-10 21:25:11
+categories:
+- sci-fi
+- fantasy
+- adventure
+- short-story
+cover: //bookgiveaway.github.io/assets/images/covers/lilly.jpg
+homepage: www.shaknaisrael.com
+book: //drive.google.com/file/d/0ByEtfG96MmUeR0huamVzSUpnM1U/view?usp=sharing
+description: >
+  First Vampire,
+  Queen of Darkness,
+  She is Rising.
+  Ethan Raith was nobody important - until he stumbled on Enlil and something worse...
+  Lilly has been hunted her whole life, but the battle is coming to a close.
+author: Shakna Israel
+---

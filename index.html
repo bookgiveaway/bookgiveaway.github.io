@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Latest Books:</h1>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+  <ul class="post-list">
+{% for post in site.posts %}
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <a href="{{ post.url }}"><a href="{{ post.url }}" target="_blank"><img class="cover" src="//{{ post.cover }}" /></a>
+    <p><em>Categories:</em></p>
+    <ul>
+      {% for categories in post.categories %}
+      <li><a href="//{{ site.url }}/{{ site.baseurl }}/{{ categories }}">{{ categories }}</a></li>
+      {% endfor %}
+    </ul>
+    <p><em>Blurb:</em></p>
+    <p>{{ post.description }}</p>
+    <div class="hr"><hr /></div>
+{% endfor %}
+
+  </ul>
+
+</div>

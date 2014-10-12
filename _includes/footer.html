@@ -1,0 +1,70 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          {% if site.data.communication.website %}
+          <li>
+            <a href="http://jmilne.com.au">
+              <i class="fa fa-desktop"></i>
+              <span class="username">jm | Design</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.data.communication.reddit %}
+          <li>
+            <a href="https://reddit.com/r/{{ site.data.communication.reddit }}">
+              <i class="fa fa-reddit"></i>
+              <span class="username">/r/{{ site.data.communication.reddit }}</span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          {% if site.data.communication.github %}
+          <li>
+            <a href="https://github.com/{{ site.data.communication.github }}">
+              <i class="fa fa-github"></i>
+              <span class="username">{{ site.data.communication.github }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.data.communication.twitter %}
+          <li>
+            <a href="https://twitter.com/{{ site.data.communication.twitter }}">
+              <i class="fa fa-twitter"></i>
+              <span class="username">{{ site.data.communication.twitter }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.data.communication.redditu %}
+          <li>
+            <a href="https://reddit.com/u/{{ site.data.communication.redditu }}">
+              <i class="fa fa-reddit"></i>
+              <span class="username">{{ site.data.communication.redditu }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">{{ site.data.global.description }}</p>
+        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>

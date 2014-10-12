@@ -1,0 +1,13 @@
+---
+layout: page
+title: Categories
+permalink: /genre/
+categories:
+- genre
+---
+
+<ul>
+  {% for page in site.categories %}
+    <li><a class="category_listing" href="../{{ page }}">{{ page }}</a></li>
+  {% endfor %}
+</ul>
